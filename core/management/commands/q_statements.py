@@ -29,12 +29,6 @@ class Command(BaseCommand):
             question_text='Wonderful Question',
             pub_date='2022-07-07'
         )
-        Choice.objects.create(
-            question=question,
-            choice_text='Accepted',
-            votes=5,
-            new_field='New field text'
-        )
 
         print(f'Total count of Choices after creation: {Choice.objects.count()}')
         print(f'Total count of Questions after creation: {Question.objects.count()}')

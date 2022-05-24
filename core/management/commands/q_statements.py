@@ -25,7 +25,7 @@ class Command(BaseCommand):
         # 1) Creating Question & Choice instances
         print(f'Total count of Choices at start: {Choice.objects.count()}')
         print(f'Total count of Questions at start: {Question.objects.count()}')
-        question = Question.objects.create(
+        Question.objects.create(
             question_text='Wonderful Question',
             pub_date='2022-07-07'
         )
